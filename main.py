@@ -38,7 +38,7 @@ def get_mask(img):
     return mask
 
 
-img=cv.imread("/Users/harshitgupta/Downloads/image_shadow_remover/images/test.png")
+img=cv.imread("test.png")
 
 msk = get_mask(img)
 
