@@ -2,23 +2,53 @@
     "images": [
         "test1.png",
         "test2.png",
-        "test3.png"
+        "test4.png",
+        "test5.png",
+        "test6.png",
+        "test6.png",
+        "test7.png",
+        "test8.png"
     ],
-    "threshold": 100,
+    "threshold": 17,
     "results": [
         {
             "input_path": "test1.png",
-            "score": 7.572363965199625,
+            "score": 1.7639479333080712,
             "blurry": true
         },
         {
             "input_path": "test2.png",
-            "score": 1283.2603826702148,
+            "score": 59.58538973730866,
             "blurry": false
         },
         {
-            "input_path": "test3.png",
-            "score": 385.14217058676616,
+            "input_path": "test4.png",
+            "score": 2.0347974963936215,
+            "blurry": true
+        },
+        {
+            "input_path": "test5.png",
+            "score": 310.30839530236966,
+            "blurry": false
+        },
+        {
+            "input_path": "test6.png",
+            "score": 5.945915441450644,
+            "blurry": true
+        },
+        {
+            "input_path": "test6.png",
+            "score": 5.945915441450644,
+            "blurry": true
+        },
+        {
+            "input_path": "test7.png",
+            "score": 2.394637732199602,
+            "blurry": true
+        },
+        {
+            "input_path": "test8.png",
+            "score": 268.9319626828379,
             "blurry": false
         }
     ]

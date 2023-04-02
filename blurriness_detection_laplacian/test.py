@@ -25,11 +25,12 @@ def pretty_blur_map(blur_map: numpy.array, sigma: int = 5, min_abs: float = 0.5)
     cv2.blur(abs_image, (sigma, sigma))
     return cv2.medianBlur(abs_image, sigma)
 results = []
-images=['test1.png','test2.png','test3.png']
-my_threshold=100
+images=['test1.png','test2.png','test4.png','test5.png','test6.png','test6.png','test7.png','test8.png']
+my_threshold=17
 save_path='./results.json'
 for image_path in images:
     image = cv2.imread(str(image_path))
+    image=fix_image_size(image)
     if image is None:
         print(f'warning! failed to read image from {image_path}; skipping!')
         continue
