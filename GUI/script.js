@@ -18,5 +18,8 @@ function uploadImage() {
       messageDiv.innerHTML = 'An error occurred while uploading the image.';
     });
     console.log("SAVED image");
+    const x = document.getElementById("removing");
+    x.style.display = "block";
+    console.log("done");
   }
   

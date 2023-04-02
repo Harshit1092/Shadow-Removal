@@ -49,3 +49,7 @@ input{
 button{
     display: none;
 }
+a{
+    display: none;
+    text-decoration:none;
+}

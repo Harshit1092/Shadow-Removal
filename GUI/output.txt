@@ -1,0 +1,2 @@
+This image is Blurry.
+It has a Score of : 2.2171505794659963
