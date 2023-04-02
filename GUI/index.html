@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Removal DIP</title>
+    <link rel="stylesheet" href="styles">
+<body>
+    <div class="outer">
+        <div class="inner">
+            <h1>Shadow Removal using DIP</h1>
+            <img src="displaypic" alt="" id="dp">
+            <form enctype="multipart/form-data">
+                <label for="image">Choose File</label>
+                <input type="file" accept="image/jpeg,image/png,image/jpg" id="image">
+                <button type="button" onclick="uploadImage()" id="uploading">Upload</button>
+                <label for="uploading">Remove Shadow</label>
+            </form>
+            <div id="message"></div>
+        </div>
+    </div>
+    <script src="script"></script>
+</body>
+</html>

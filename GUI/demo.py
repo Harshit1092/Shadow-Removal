@@ -39,7 +39,7 @@ def get_mask(img):
     return mask
 
 
-img=cv.imread("test.png")
+img=cv.imread("images/input.png")
 
 msk = get_mask(img)
 
@@ -78,4 +78,4 @@ for i in range(r):
         else:
             new_img[i][j]=img[i][j]
 
-cv.imwrite("output.png",new_img)
+cv.imwrite("images/output.png",new_img)
