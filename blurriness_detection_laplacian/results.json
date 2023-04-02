@@ -1,0 +1,25 @@
+{
+    "images": [
+        "test1.png",
+        "test2.png",
+        "test3.png"
+    ],
+    "threshold": 100,
+    "results": [
+        {
+            "input_path": "test1.png",
+            "score": 7.572363965199625,
+            "blurry": true
+        },
+        {
+            "input_path": "test2.png",
+            "score": 1283.2603826702148,
+            "blurry": false
+        },
+        {
+            "input_path": "test3.png",
+            "score": 385.14217058676616,
+            "blurry": false
+        }
+    ]
+}
