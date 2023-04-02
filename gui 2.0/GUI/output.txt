@@ -1,2 +1,2 @@
 This image is not Blurry.
-It has a Score of : 240.5283278882814
+It has a Score of : 268.9319626828379

@@ -54,7 +54,7 @@ app.post('/uploadblur', upload.single('images'), (req, res) => {
   const { error } = require('console');
   const { stdout, stderr } = require('process');
 
-  exec('python blur.py',(error,stdout,stderr)=>{
+  exec('python test.py',(error,stdout,stderr)=>{
       if(error){
           console.log(`error: ${error.message}`);
           return;

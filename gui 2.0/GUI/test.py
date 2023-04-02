@@ -1,5 +1,7 @@
 import cv2
 import numpy
+import json
+
 
 def fix_image_size(image: numpy.array, expected_pixels: float = 2E6):
     ratio = numpy.sqrt(expected_pixels / (image.shape[0] * image.shape[1]))
@@ -24,19 +26,18 @@ def pretty_blur_map(blur_map: numpy.array, sigma: int = 5, min_abs: float = 0.5)
     return cv2.medianBlur(abs_image, sigma)
 results = []
 images=['images/input.png']
-my_threshold=100
-save_path='./results.json'
+my_threshold=17
+
 for image_path in images:
     image = cv2.imread(str(image_path))
+    image=fix_image_size(image)
     if image is None:
         print(f'warning! failed to read image from {image_path}; skipping!')
         continue
 
-    # print(f'processing {image_path}')
 
     blur_map, score, blurry = estimate_blur(image, threshold=my_threshold)
 
-    # print(f'image_path: {image_path} score: {score} blurry: {blurry}')
     if(blurry):
         print(f"This image is blurry .It has a Score of {score}")
         results.append(f'This image is Blurry.\n')
